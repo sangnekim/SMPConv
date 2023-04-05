@@ -11,7 +11,8 @@ This directory includes **image classification with ImageNet-1k**
 
 
 ## Training
-**Requirements are [here](https://github.com/sangnekim/SMPConv#requirements)
+**Requirements are [here](https://github.com/sangnekim/SMPConv#requirements)**  
+
 We trained our models with 4 A100 80GB GPUs  
 Batch size: batch_size x update_freq x num_GPUs
 
