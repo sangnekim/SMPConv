@@ -1,0 +1,80 @@
+# @package _global_
+net:
+  type: ""
+  no_hidden: -1
+  no_blocks: -1
+  dropout: 0.0
+  dropout_in: 0.0
+  norm: ""
+  nonlinearity: "ReLU"
+  block_width_factors: [0.0, ]
+kernel:
+  dim_linear: 0           # Should be overridden automatically
+  n_points: 36
+  radius: 0.002
+  coord_std: 0.1
+conv:
+  type: ""
+  use_fft: False
+  bias: False
+  padding: "same"
+  stride: 1
+  horizon: "same"
+  cache: False
+  small_kernel_size: 1
+dataset: ""
+dataset_params:
+  root: ""
+  permuted: False       # For permuted sMNIST
+  noise_padded: False   # For noise-padded CIFAR10
+  mfcc: False           # For MFCC pre-processing on SpeechCommands
+  drop_rate: 0.0        # For irregular SpeechCommands and CharTrajetories
+  seq_length: -1
+train:
+  do: True
+  augment: None
+  report_top5_acc: False
+  epochs: -1
+  batch_size: -1
+  lr: 0.0
+  radius_lr_factor: 0.1
+  weight_decay: 0.0
+  grad_clip: 0.0
+  optimizer: Adam
+  optimizer_params:
+    momentum: -1
+    nesterov: False
+  scheduler: ""
+  scheduler_params:
+    decay_steps: -1
+    decay_factor: 5
+    patience: 20
+    warmup_epochs: 5
+test:
+  before_train: False
+wandb:
+  project: 
+  entity: 
+  dir: 
+device: cuda
+debug: False
+pretrained: False
+pretrained_params:
+  filepath: ""
+pretrained_wandb: False
+pretrained_wandb_params:
+  filename: ""
+  run_path: ""
+pretrained_strict: True
+seed: 0
+deterministic: False
+comment: ""
+time: False
+summary: [0, ]
+summary_depth: 5
+testcase:
+  load: False
+  save: False
+  epochs: 1
+  batches: 20
+  path: ""
