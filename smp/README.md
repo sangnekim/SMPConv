@@ -16,7 +16,7 @@ This directory includes **sequential data classifications** and **image classifi
 
 
 ## Train
-
+**Requirements are [here](https://github.com/sangnekim/SMPConv#requirements)**
 #### sMNIST
 ```
 python run_experiment.py conv.horizon=same train.batch_size=64 net.no_blocks=6 net.no_hidden=30 conv.type=CKConv dataset=sMNIST device=cuda net.dropout_in=0.1 train.epochs=200 kernel.n_points=30 kernel.radius=0.002 kernel.coord_std=0.1 conv.small_kernel_size=5 net.type=TCN net.norm=BatchNorm train.radius_lr_factor=0.1 train.augment=standard train.optimizer=Adam train.scheduler=cosine train.weight_decay=1e-5 summary="[64, 1, 784]" seed=0 conv.use_fft=True dataset_params.permuted=False net.dropout=0 train.lr=0.0001
