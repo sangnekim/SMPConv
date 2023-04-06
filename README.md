@@ -4,9 +4,14 @@
 
 **Sungkyunkwan University**  
 
-**IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR), 2023**
+**IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR), 2023**  
 
 [paper](https://arxiv.org/abs/2304.02330)
+
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/smpconv-self-moving-point-representations-for/sequential-image-classification-on-sequential)](https://paperswithcode.com/sota/sequential-image-classification-on-sequential?p=smpconv-self-moving-point-representations-for)  
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/smpconv-self-moving-point-representations-for/sequential-image-classification-on-sequential-1)](https://paperswithcode.com/sota/sequential-image-classification-on-sequential-1?p=smpconv-self-moving-point-representations-for)
 
 ## Abstract
 *Continuous convolution has recently gained prominence due to its ability to handle irregularly sampled data and model long-term dependency. Also, the promising experimental results of using large convolutional kernels have catalyzed the development of continuous convolution since they can construct large kernels very efficiently. Leveraging neural networks, more specifically multilayer perceptrons (MLPs), is by far the most prevalent approach to implementing continuous convolution. However, there are a few drawbacks, such as high computational costs, complex hyperparameter tuning, and limited descriptive power of filters. This paper suggests an alternative approach to building a continuous convolution without neural networks, resulting in more computationally efficient and improved performance. We present self-moving point representations where weight parameters freely move, and interpolation schemes are used to implement continuous functions. When applied to construct convolutional kernels, the experimental results have shown improved performance with drop-in replacement in the existing frameworks. Due to its lightweight structure, we are first to demonstrate the effectiveness of continuous convolution in a large-scale setting, e.g., ImageNet, presenting the improvements over the prior arts.*
