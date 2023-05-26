@@ -66,10 +66,11 @@ This project is released under the MIT license.
 ## Citation
 
 ```
-@article{kim2023smpconv,
+@inproceedings{kim2023smpconv,
   author    = {Kim, Sanghyeon and Park, Eunbyung},
   title     = {SMPConv: Self-moving Point Representations for Continuous Convolution},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pages     = {10289--10299},
   month     = {June},
   year      = {2023},
 }
