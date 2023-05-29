@@ -61,9 +61,9 @@ class SMPConv(nn.Module):
         diff = F.relu(1 - torch.sum(torch.abs(diff), dim=2) / self.radius)  # [1, n_points, kernel_size, kernel_size]
         
         # Apply weighted diff for average weighted kernel
-        non_zero = (diff != 0) # [1, n_points, kernel_size, kernel_size]
-        count_weight = 1 / (torch.sum(non_zero, dim=1, keepdim=True) + 1e-6)  # [1, 1, kernel_size, kernel_size]
-        weighted_diff = count_weight * diff  # [1, n_points, kernel_size, kernel_size]
+        # non_zero = (diff != 0) # [1, n_points, kernel_size, kernel_size]
+        # count_weight = 1 / (torch.sum(non_zero, dim=1, keepdim=True) + 1e-6)  # [1, 1, kernel_size, kernel_size]
+        # weighted_diff = count_weight * diff  # [1, n_points, kernel_size, kernel_size]
 
         kernels = torch.matmul(self.weights, diff.reshape(1, self.n_points, -1)) # [1, planes, kernel_size*kernel_size]
         kernels = kernels.reshape(1, self.planes, *self.kernel_coord.shape[2:]) # [1, planes, kernel_size, kernel_size]
